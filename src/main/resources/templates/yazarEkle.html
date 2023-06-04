@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Yazar Ekle</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card mt-5">
+        <div class="card-header text-center">
+          <h2>Yeni Yazar Ekle</h2>
+        </div>
+        <div class="card-body">
+          <form action="#" th:action="@{/yazarEkle}" th:object="${yazar}" method="post">
+            <div class="form-group">
+              <label for="isim">İsim</label>
+              <input type="text" class="form-control" id="isim" th:field="*{isim}">
+            </div>
+            <div class="form-group">
+              <label for="dogumYili">Doğum Yılı</label>
+              <input type="text" class="form-control" id="dogumYili" th:field="*{dogumYili}">
+            </div>
+            <div class="form-group">
+              <label for="yas">Yaş</label>
+              <input type="number" class="form-control" id="yas" th:field="*{yas}">
+            </div>
+            <button type="submit" class="btn btn-primary">Ekle</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

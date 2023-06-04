@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Yazar Bilgileri</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mt-5">
+                <div class="card-header text-center">
+                    <h2>Yazar Bilgileri</h2>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title" th:text="${yazar.isim}"></h4>
+                    <h6 class="card-subtitle mb-2 text-muted" th:text="'Doğum Yılı: ' + ${yazar.dogumYili}"></h6>
+                    <p class="card-text" th:text="'Yaş: ' + ${yazar.yas}"></p>
+                    <h5 class="card-text">Kitaplar:</h5>
+                    <ul class="list-group list-group-flush" th:each="kitap : ${yazar.kitaplar}">
+                        <li class="list-group-item" th:text="${kitap}"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
