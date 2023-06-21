@@ -1,4 +1,4 @@
-![[obsolete-turntable-old-fashioned-table-nightclub-generated-by-ai.jpg]]
+![](obsolete-turntable-old-fashioned-table-nightclub-generated-by-ai.jpg)
 # Proje için gerekli ortamın hazırlanması:
 ```ad-warning
 title:Gereksinimler
